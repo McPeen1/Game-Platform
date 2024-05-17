@@ -2,13 +2,13 @@ import java.util.Scanner;
 import EightBall.EightBall;
 public class GamePlatform {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner game = new Scanner(System.in);
 
         System.out.println("Welcome to the minigame choices!");
         System.out.println("Choose a game to play (1-3): ");
-        int choice = scanner.nextInt(); /// Having 3 different game choices to choose from
+        int choice = game.nextInt(); /// Having 3 different game choices to choose from
         
-        if (choice ==1) {
+        if (choice ==1) {1
             System.out.println("1. Game 1");
             EightBall.main(args);
         }
@@ -21,6 +21,6 @@ public class GamePlatform {
     else{
         System.out.println("Invalid choice! Please try again");
     }
-    scanner.close();
+    game.close();
     }
 }
