@@ -8,7 +8,7 @@ public class ShortAdventure {
 	
 	
 	System.out.print( " Welcome to stiven's ShortAdventure! " );
-	System.out.print( "You are in a creapy park would you like to go \"swings\" or into the \"slide\" ? ");
+	System.out.print( "You are in a creapy park would you like to go \"swings\" or into the \"house\" ? ");
 	String R1 = keyboard.next();
 	
 		if ( R1.compareToIgnoreCase("swings") == 0 ) {
