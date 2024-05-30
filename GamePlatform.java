@@ -1,5 +1,6 @@
 import java.util.Scanner; 
 import EightBall.EightBall; //imported Magic EightBall
+import CoinFlip.CoinFlip;
 public class GamePlatform {
     public static void main(String[] args) {
         Scanner game = new Scanner(System.in);
@@ -14,7 +15,9 @@ public class GamePlatform {
         }
         else if (choice == 2) {
         System.out.println("2. Game 2");
-    }
+        CoinFlip.main(args);
+        
+        }
         else if (choice ==3) {
     System.out.println("3. Game 3"); 
     }
