@@ -14,12 +14,13 @@ public class GamePlatform {
             EightBall.main(args);
         }
         else if (choice == 2) {
-        System.out.println("2. Game 2");
+        System.out.println("2. Game 2"); ///game 2  Flip and a coin and get as many as you can in a row.
         CoinFlip.main(args);
-        
         }
-        else if (choice ==3) {
+        
+         else if (choice ==3) {
     System.out.println("3. Game 3"); 
+      ShortAdventure.main(args);
     }
     else{
         System.out.println("Invalid choice! Please try again"); ///if you dont pick a choice 1-3 it would print out Inavlid choice
