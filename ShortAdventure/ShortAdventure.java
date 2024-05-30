@@ -1,5 +1,7 @@
-//import java.util.Scanner;
 package ShortAdventure;
+import java.util.Scanner;
+
+
 public class ShortAdventure {
     public static void main( String[] args ) {
 	Scanner keyboard = new Scanner(System.in);
@@ -42,7 +44,7 @@ public class ShortAdventure {
 				else { System.out.println( "You get tired go around and run home!" );
 				}
 				}
-				else { System.out.println( "You wake up and find a gun in the drawer right next to uoi );
+				else { System.out.println( "You wake up and find a gun in the drawer right next to you");
 				String R7 = keyboard.next();
 				if ( R7.compareToIgnoreCase("yes") == 0 ) {
 				System.out.println("You found a pistol to get to keep! ");

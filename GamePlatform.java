@@ -1,13 +1,15 @@
 import java.util.Scanner; 
 import EightBall.EightBall; //imported Magic EightBall
 import CoinFlip.CoinFlip;
+import ShortAdventure.ShortAdventure;
+import ModulusAnimation.ModulusAnimation;
 public class GamePlatform {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner game = new Scanner(System.in);
  
         System.out.println("Welcome to the minigame choices!");
-        System.out.println("Choose a game to play (1-3): ");
-        int choice = game.nextInt(); /// Having 3 different game choices to choose from
+        System.out.println("Choose a game to play (1-4): ");
+        int choice = game.nextInt(); /// Having 4 different game choices to choose from
         
         if (choice ==1) {
             System.out.println("1. Game 1"); ///game 1  Magic Eightball Random Responses
@@ -20,10 +22,14 @@ public class GamePlatform {
         
          else if (choice ==3) {
     System.out.println("3. Game 3"); 
-      ShortAdventure.main(args);
+    ShortAdventure.main(args);
+    }
+    else if (choice ==4) {
+        System.out.println("4. Game 4"); 
+        ModulusAnimation.main(args);
     }
     else{
-        System.out.println("Invalid choice! Please try again"); ///if you dont pick a choice 1-3 it would print out Inavlid choice
+        System.out.println("Invalid choice! Please try again"); ///if you dont pick a choice 1-4 it would print out Inavlid choice
     }
     game.close();
     }

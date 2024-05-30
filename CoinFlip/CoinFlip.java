@@ -6,10 +6,10 @@ public class CoinFlip {
 	     Scanner Keyboard = new Scanner(System.in);
 		 String coin, again;
 		 int streak = 0;
-		 boolean gotHeads;
+		 boolean gotHeads; //true or false
 		 
 		 do {
-		    gotHeads = Math.random() < 0.5;
+		    gotHeads = Math.random() < 0.5; //random selection
 			
 			if ( gotHeads )
 			    coin = "HEADS";
