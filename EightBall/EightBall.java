@@ -1,16 +1,17 @@
-package EightBall;
-public class EightBall {
+package EightBall;//for importing to main GamePlatform
+public class EightBall { // main class  
     
-        public static void main ( String[] args ) {
-            int choice = 1 + (int)(Math.random()*20);
-            String response = "";
+        public static void main ( String[] args ) {// main method
+            int choice = 1 + (int)(Math.random()*20);/// generates a random number between 1 and 20
+            String response = "";// initialize the response string
+            /// The program randomly selects a response based on the random number generated to Magic Eight ball to answer questions, than prints response.
             
     
-        if ( choice == 1 )
+        if ( choice == 1 ) // generate choice 1 
             response = "It is certain";
         else if ( choice == 2 )
             response = "It is decidedly so";
-        else if ( choice == 3 )
+        else if ( choice == 3 )/// All the same, different choices different responses, but randomly picked.
             response = "Without a doubt";
         else if ( choice == 4 )
             response = "Yes - definitely";
@@ -48,7 +49,8 @@ public class EightBall {
             response = "Very doubtful";
         else
             response = "8-BALL ERROR!";
-                System.out.println( "MAGIC 8-BALL SAYS: " + response );
-        }
-    }
+                System.out.println( "MAGIC 8-BALL SAYS: " + response ); /// after selecting a random number, it will print the random response.
+                /// all 20 choices with random responses.
+        } //closing bracket
+    }//closing bracket
 
