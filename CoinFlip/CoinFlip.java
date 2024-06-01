@@ -18,24 +18,24 @@ public class CoinFlip {// defines the CoinFlip class
 			   
 			System.out.println("You flip a coin and it is... " + coin); //prints out the result of the coin flip
 			
-			if ( gotHeads ) {
+			if ( gotHeads ) {// executes if the coin resulted in "HEADS" prints the streak and promts the user to flip again
 			    streak++;
 				System.out.println("\tThat's " + streak + " in a row....");
 				
 				
-				System.out.print("\tWould you like to flip again (Y/n)? ");
-				again = Keyboard.next();
+				System.out.print("\tWould you like to flip again (Y/n)? ");////prompts the user to flip again
+				again = Keyboard.next();///  next() method reads the next token from the keyboard and returns it as a String.
 			}
-			else {
+			else {// executes if the coin resulted in "TAILS" prints the streak and promts the user
 			   System.out.println("\tYou loose everything!");
 			   System.out.println("\tShould've quit while you were aHEAD....");
-			   streak = 0;
+			   streak = 0; //counter to 0 and sets again to "n" to exit the loop.
 			   again = "n";
 			  
 			  }
-			} while ( again.equals("Y") );
+			} while ( again.equals("Y") ); /// Ends the do while loop and checks if the user wants to flip again. by comparing the value of again to "Y" if the User enters "Y" the loop will continue. other wise the loop will end.
 			
-			System.out.println( "Final Score: " + streak );
+			System.out.println( "Final Score: " + streak );// prints the final streak score to the console after the loop ends.
 		}
     }
 				
